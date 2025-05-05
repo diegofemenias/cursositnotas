@@ -123,7 +123,7 @@ function App() {
 createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Navigate to={`/${nanoid()}`} />} />
+      <Route path="/" element={<Navigate to={`/chat`} />} />
       <Route path="/:room" element={<App />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
